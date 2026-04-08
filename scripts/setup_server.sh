@@ -14,4 +14,3 @@ echo "server_port=8080" > web_app/config/settings.conf
 
 echo "--- Server Provisioning Complete ---"
 
-read -p "Press enter to exit"
