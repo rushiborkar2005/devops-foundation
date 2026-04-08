@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x  
 
 echo "Starting System Update..."
 
@@ -7,8 +8,6 @@ mkdir -p web_app/logs
 mkdir -p web_app/config
 
 echo "Creating config file..."
-echo "server_port=8080" > web_app/config/settings.conf || true
+echo "server_port=8080" > web_app/config/settings.conf
 
 echo "--- Server Provisioning Complete ---"
-
-exit 0
