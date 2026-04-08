@@ -10,5 +10,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
 
+      - name: Give permission
+        run: chmod +x scripts/setup_server.sh
+
       - name: Run Setup Script
         run: bash scripts/setup_server.sh
