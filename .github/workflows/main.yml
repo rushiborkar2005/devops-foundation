@@ -8,9 +8,9 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Run Setup Script
         run: |
           chmod +x scripts/setup_server.sh
-          ./scripts/setup_server.sh || true
+          bash scripts/setup_server.sh || exit 0
