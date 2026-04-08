@@ -10,11 +10,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
 
-      - name: Give permission
-        run: chmod +x scripts/setup_server.sh
-
       - name: Run Setup Script
         run: |
-          set +e
-          bash scripts/setup_server.sh
-          echo "Script completed"
+          chmod +x scripts/setup_server.sh
+          ./scripts/setup_server.sh || true
