@@ -1,8 +1,0 @@
-exit
-docker network create my-app-network
-db.users.find()
-db.users.find()use testdb
-exit
-db.users.find()
-db.users.insertOne({ name: "Rushi", role: "DevOps" })
-use testdb
