@@ -1,1 +1,0 @@
-CMD ["python", "your_file_name.py"]
