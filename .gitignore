@@ -1,0 +1,15 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Terraform
+.terraform/
+
+# MongoDB data
+mongodata/
+
+# General
+node_modules/
+.env
